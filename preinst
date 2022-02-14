@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+
+echo "Looking for old versions of ABC..."
+
+if [ -f "$HOME/bin/executable" ]; then
+	sudo rm -f $HOME/bin/executable
+	echo "Removed old ABC from ~/bin..."
+fi
+
+if [ -f "/usr/local/bin/executable" ]; then
+	sudo rm -f /usr/local/bin/executable	
+	echo "Removed old ABC from /usr/local/bin..."
+fi
+
+if [ -f "/usr/bin/executable" ]; then
+	sudo rm -f /usr/bin/executable	
+	echo "Removed old ABC from /usr/bin..."
+fi
+
+if [ -f "/usr/share/applications/app.desktop" ]; then
+	sudo rm -f /usr/share/applications/app.desktop	
+	echo "Removed old ABC desktop menu file from /usr/share/applications..."
+fi
+
+if [ -f "/usr/share/icons/icon.xpm" ]; then
+	sudo rm -f /usr/share/icons/icon.xpm 	
+	echo "Removed old app menu icon file from /usr/share/icons..."
+fi
+
+exit
