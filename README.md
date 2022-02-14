@@ -10,12 +10,13 @@ screenshots 📷
 
 first install imagemagick tool
 
-,,,
+```
 sudo apt install imagemagick
-,,,
+```
 
 
 open terminal and enter
-,,,
+
+```
 sudo dpkg -i <deb-name>
-,,,
+```
