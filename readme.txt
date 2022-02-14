@@ -6,7 +6,7 @@
  
  how to install !
  #####################
- 
+ install imagemagick apt install imagemagick
  simply install the deb package in release page
    
  known-issues
